@@ -396,6 +396,7 @@ if (isset($qode_options_proya['footer_text'])) {
 </div>
 </div>
 
+
 <?php wp_footer(); ?>
 </body>
 </html>
