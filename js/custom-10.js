@@ -1,27 +1,28 @@
-function checkVisible( elm, eval ) {
-    eval = eval || "visible";
-    var vpH = jQuery(window).height(), // Viewport Height
-        st = jQuery(window).scrollTop(), // Scroll Top
-        y = jQuery(elm).offset().top,
-        elementHeight = jQuery(elm).height();
+// function checkVisible( elm, eval ) {
+//     eval = eval || "visible";
+//     var vpH = jQuery(window).height(), // Viewport Height
+//         st = jQuery(window).scrollTop(), // Scroll Top
+//         // y = jQuery(elm).offset().top,
+//         elementHeight = jQuery(elm).height();
     
-    if (eval == "visible") return ((y < (vpH + st)) && (y > (st - elementHeight)));
-    if (eval == "above") return ((y < (vpH + st)));
-}
+//     if (eval == "visible") return ((y < (vpH + st)) && (y > (st - elementHeight)));
+//     if (eval == "above") return ((y < (vpH + st)));
+// }
 
  jQuery(document).ready(function(){
-    jQuery("#js-rotating").Morphext({
-        // The [in] animation type. Refer to Animate.css for a list of available animations.
-        animation: "slideInUp",
-        // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
-        separator: ",",
-        // The delay between the changing of each phrase in milliseconds.
-        speed: 2000,
-        complete: function () {
-            // Called after the entrance animation is executed.
-        }
-    });
-    
+
+        jQuery("#js-rotating").Morphext({
+            // The [in] animation type. Refer to Animate.css for a list of available animations.
+            animation: "slideInUp",
+            // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+            separator: ",",
+            // The delay between the changing of each phrase in milliseconds.
+            speed: 2000,
+            complete: function () {
+                // Called after the entrance animation is executed.
+            }
+        });
+
 
     window.setTimeout(function(){
         jQuery('.scroll_header_top_area').addClass('ok');
@@ -111,11 +112,11 @@ function checkVisible( elm, eval ) {
 //     }
 // })
 
-jQuery(window).scroll(function() {
-    if (checkVisible(jQuery('#contactus'))) {
-        jQuery('.change_menu').hide();
+// jQuery(window).scroll(function() {
+//     if (checkVisible(jQuery('#contactus'))) {
+//         jQuery('.change_menu').hide();
         
-    } else {
-        jQuery('.change_menu').show();
-    }
-});
+//     } else {
+//         jQuery('.change_menu').show();
+//     }
+// });
