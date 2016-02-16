@@ -1024,6 +1024,11 @@ p.quote {
 
 }
 
+
+div.wpcf7-response-output {
+    background: black;
+}
+
 @supports (-ms-accelerator:true) {
       .full_width_inner {
         position: relative;

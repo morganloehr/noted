@@ -4,17 +4,17 @@
 
 Function wp_schools_enqueue_scripts() {
 wp_register_style( 'childstyle', get_stylesheet_directory_uri() . '/style-1.css'  );
-wp_register_style( 'molostyle-33', get_stylesheet_directory_uri() . '/molostyle-33.css'  );
+wp_register_style( 'molostyle-34', get_stylesheet_directory_uri() . '/molostyle-34.css'  );
 wp_register_style( 'animate', get_stylesheet_directory_uri() . '/animate.css'  );
 wp_enqueue_style( 'childstyle' );
-wp_enqueue_style( 'molostyle-33' );
+wp_enqueue_style( 'molostyle-34' );
 
 wp_enqueue_script('external-js', 'https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js', array(), true);
 wp_enqueue_script('morphext-js', get_stylesheet_directory_uri() . '/js/morphext.min.js', array('external-js'), true );
 // wp_enqueue_script('smartscroll-js', get_stylesheet_directory_uri() . '/js/jquery.smartscroll.min.js', array('morphext-js'), true );
 wp_enqueue_script('appear-js', get_stylesheet_directory_uri() . '/js/jquery.appear.js', array('morphext-js'), true );
 wp_enqueue_script('custom-10-js', get_stylesheet_directory_uri() . '/js/custom-10.js', array('appear-js'), true );
-wp_enqueue_script('molo-7-js', get_stylesheet_directory_uri() . '/js/molo-7.js', array('appear-js'), true );
+wp_enqueue_script('molo-9-js', get_stylesheet_directory_uri() . '/js/molo-9.js', array('appear-js'), true );
 
 
 
